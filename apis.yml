@@ -1,8 +1,13 @@
 aid: medi-assist
 name: Medi Assist
-description: 'Medi Assist is a company surfaced as a portfolio company of bessemer-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'MediBuddy (Medi Assist) is a Bessemer Venture Partners-backed digital
+  healthcare platform based in India that lets consumers and corporate health-benefit
+  members book online doctor consultations, order lab tests and diagnostic health
+  checkups, buy medicines, and access cashless hospitalization and insurance-linked
+  care through a single app and website. It operates as a consumer-facing health
+  services marketplace; at the time of this enrichment pass it publishes no public
+  developer API, developer portal, or machine-readable API specification. This
+  profile records what could be verified from the public web surface.'
 url: https://raw.githubusercontent.com/api-evangelist/medi-assist/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +15,30 @@ x-backed-by:
 - bessemer-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Healthcare
+- Digital Health
+- Telemedicine
+- Diagnostics
+- Online Pharmacy
+- Health Insurance
+- India
+image: https://www.medibuddy.in/favicon.ico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/medi-assist-domain-security.yml
 - type: Website
   url: https://www.medibuddy.in/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
